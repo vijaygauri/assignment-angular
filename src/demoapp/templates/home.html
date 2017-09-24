@@ -1,0 +1,28 @@
+ <div ng-include='"src/common/header.html"'></div>
+<div class="container-fluid">
+	<div class="row row-offcanvas row-offcanvas-right">
+		<div class="col-xs-6 col-sm-3 col-sm-pull-1 sidebar-offcanvas">
+
+        <!-- Sidebar -->
+       
+</div>
+
+  <div class="col-xs-12 col-sm-9 col-sm-push-3">
+  <p><strong></strong></p>
+      <div ui-grid="gridOptions1" ui-grid-pagination class="grid"></div>
+      <br /><br />
+     
+      <div ui-grid="gridOptions2" ui-grid-pagination class="grid"></div>
+      <p>Current page: {{ gridApi2.pagination.getPage() }} of {{ gridApi2.pagination.getTotalPages() }}</p>
+      <button type="button" class="btn btn-success" ng-click="gridApi2.pagination.previousPage()">
+        previous page
+      </button>
+      <button type="button" class="btn btn-success" ng-click="gridApi2.pagination.nextPage()">
+        next page
+      </button>
+      <button type="button" class="btn btn-success" ng-click="gridApi2.pagination.seek(3)">
+        go to page 2
+      </button>
+  </div>
+</div>
+  

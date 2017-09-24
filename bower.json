@@ -1,0 +1,28 @@
+{
+  "name": "bower",
+  "description": "demoApplication",
+   "main": ["./ui-grid.css", "./ui-grid.js"],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+ 
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "bootstrap": "~3.3.5",
+	"ngstorage": "0.3.10",
+	"angular-ui-grid": "3.0.0-RC.18",
+	 "google-code-prettify": "~1.0.2",
+    "jquery": "~1.8.0",
+    "lodash": "~2.4.1",
+    "pdfmake": "~0.1.8",
+    "csv-js": "https://github.com/c0bra/CSV-JS.git#~1.0.2"
+  }
+}

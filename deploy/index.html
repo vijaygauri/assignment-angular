@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" text="text/css" href="css/bower.css"/>
+    <link rel="stylesheet" text="text/css" href="css/app.css"/>
+<link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css"/>
+    <script src="js/bower.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/templates.js"></script>
+    </head>
+    <body>
+        <div id="LogIn">
+       
+        <div ng-view></div>
+        </div>     
+        
+        <script>
+            var container = document.getElementById("LogIn");
+            angular.element(document).ready(function(){
+                angular.bootstrap(container,['demoapp']);
+            })
+        </script>    
+
+
+    </body>
+</html>    
